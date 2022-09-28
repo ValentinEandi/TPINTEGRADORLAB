@@ -2,8 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
- Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans, nicode', Geneva, Verdana, sans-serif;
 
 }
 
@@ -37,7 +36,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
+    border-bottom: 2px solid var(--color-active);
+    border-end-start-radius: 35px;
+    border-end-end-radius: 35px;
 }
 
 nav>ul {
@@ -65,6 +67,8 @@ nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
+    border-top-left-radius: 3mm;
+    border-top-right-radius: 3mm;
 }
 
 main {
@@ -73,6 +77,21 @@ main {
     padding: 16px;
     padding-bottom: 60px;
     height: calc(100% - 120px);
+}
+.botones {
+    border-radius: 3mm;
+    border: none;
+    padding: 8px;
+    background-color: var(--color-theme);
+    color: white;
+}
+.Emailerror{
+    border-radius: 3mm;
+    text-align: center;
+    padding: 13px;
+    background-color: #dc3545;
+    color: white;
+
 }
 
 h1 {
@@ -106,7 +125,8 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
+    background: var(--color-gradient);
+    border-top: 2px solid var(--color-active);
     width: 100%;
     text-align: center;
     padding-top: 10px;

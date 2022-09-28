@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGREGAR CIUDAD</title>
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/pages/add-city.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="shortcut icon" href="./img/nube.png">
 </head>
 
@@ -19,7 +20,7 @@
         <nav>
             <ul>
                 <li><a href="./index.html">Clima</a></li>
-                <li class="current-page"><a href="./add-city.html">Agregar Ciudad</a></li>
+                <li class="current-page"><a href="./add-city.html"><b>Agregar Ciudad</b></a></li>
                 <li><a href="./help.html">Ayuda</a></li>
             </ul>
         </nav>
@@ -29,15 +30,27 @@
         <h2>Agregar Ciudad</h2>
         <section>
             <form>
-                <b>Ingrese la ciudad que desea agregar:<input type="text"></b> <br/>
-                <button>Agregar</button>
+                <b>Ingrese la ciudad a agregar:</b> <br>
+                <br>
+                <input type="text" class="agregarciudad"> <br />
+                <br>
+                <button class="Agregar">Agregar</button>
+                <br>
+                <div>
+                <br>
+                <p class="colorVerde">Ciudad agregada con exito</p>
+                <br>
+                <p class="Emailerror">Error: La ciudad ingresada no se encuentra en la API o se <br>produjo un error al consultar</p>
+                <br>
+                <p class="colorAmarillo">La ciudad ingresada ya se encuentra almacenada</p>
+                </div>
 
             </form>
             <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
         </section>
-    
-            <!-- Sección donde se debe mostrar el clima de la ciudad -->
+
+        <!-- Sección donde se debe mostrar el clima de la ciudad -->
         </section>
     </main>
     <footer>

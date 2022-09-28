@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans, nicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+:root {
+    /* Declaro variables CSS con colores principales */
+    --color-theme: #00594c;
+    --color-active: #5df2d6;
+    --color-back-active: #04957d;
+    --color-gradient: linear-gradient(to right, var(--color-theme),
+            var(--color-back-active));
+}
+.ciudades {
+    border-radius: 1mm;
+    padding: 8px;
+}
+.boton {
+    border-radius: 3mm;
+    border: none;
+    padding: 8px;
+    background-color: var(--color-theme);
+    color: white;
+   
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px  gray;
+    border-radius: 6mm;
+    text-align: center;
+    align-items: center;
+}
