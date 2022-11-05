@@ -85,7 +85,7 @@ main {
     background-color: var(--color-theme);
     color: white;
 }
-.Emailerror{
+#Emailerror{
     border-radius: 3mm;
     text-align: center;
     padding: 13px;

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./js/pages/add-city.js"></script>
+    <script defer src="./js/common.js"></script>
     <title>AGREGAR CIUDAD</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/pages/add-city.css">
@@ -32,17 +34,17 @@
             <form>
                 <b>Ingrese la ciudad a agregar:</b> <br>
                 <br>
-                <input type="text" class="agregarciudad"> <br />
+                <input type="text" class="agregarciudad" id="ciudad"> <br />
                 <br>
-                <button class="Agregar">Agregar</button>
+                <input type="button" value="Agregar" class="Agregar" onclick="AgregarCiudad()" ></input>
                 <br>
                 <div>
                 <br>
-                <p class="colorVerde">Ciudad agregada con exito</p>
+                <p id="colorVerde" style="display: none;">Ciudad agregada con exito</p>
                 <br>
-                <p class="Emailerror">Error: La ciudad ingresada no se encuentra en la API o se <br>produjo un error al consultar</p>
+                <p id="Emailerror" style="display: none;">Error: La ciudad ingresada no se encuentra en la API o se <br>produjo un error al consultar</p>
                 <br>
-                <p class="colorAmarillo">La ciudad ingresada ya se encuentra almacenada</p>
+                <p id="colorAmarillo" style="display: none;">La ciudad ingresada ya se encuentra almacenada</p>
                 </div>
 
             </form>

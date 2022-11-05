@@ -35,7 +35,7 @@ main {
     background-color: var(--color-theme);
     color: white;
 }
-.colorVerde {
+#colorVerde {
     border-radius: 3mm;
     text-align: center;
     padding: 16px;
@@ -44,7 +44,7 @@ main {
    
 }
 
-.colorAmarillo {
+#colorAmarillo {
     border-radius: 3mm;
     text-align: center;
     padding: 16px;

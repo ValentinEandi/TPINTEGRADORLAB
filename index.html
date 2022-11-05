@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script defer src="./js/common.js"></script>
+    <script src="./js/pages/index.js"></script>
     <title>CLIMA</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/pages/index.css">
@@ -32,27 +33,26 @@
 
         <h2>El Clima Ahora</h2>
         <section id="form-city-list">
-            <form>
-                <select class="ciudades">
+            <form action="" id="formulario_index">
+                <select class="ciudades" id="ciudades" onclick="vacio()">
                     <option value="" disabled selected>Seleccionar ciudad</option>
-                    <option value="Rosario"><b>Rosario</b></option>
-                    <option value="Rafaela"><b>Rafaela</b></option>
+                    
                 </select>
-                <button class="boton">Consultar</button>
+                <input  type="button" class="boton" id="boton" value="Consultar" onclick="callAPI()"></input>
             </form>
             <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
         </section>
         <br>
         <section id="section-weather-result">
-            <div class="card">
-                <h3>Rosario</h3>
+            <div class="card" style="display: none;">
+                <h3 id="Ciudad"></h3>
                 <img src="./img/pelotanaranja.png" alt="Rosario" width="100">
-                <p>Temperatura: 13.76°</p>
-                <p>Sensación Térmica: 12.91°</p>
-                <p>Humedad: 66%</p>
-                <p>Velocidad del viento: 2.06km</p>
-                <p>Presión: 1024 P</p>
+                <p id="Grados"></p>
+                <p id="SensacionTermica"></p>
+                <p id="Humedad"></p>
+                <p id="Velocidad"></p>
+                <p id="Presion"></p>
 
 
             </div>
