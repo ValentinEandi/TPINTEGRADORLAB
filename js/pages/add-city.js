@@ -11,7 +11,7 @@ function getCitiesFromLocalStorage() {
 //localStorage.removeItem("CITIES");
  
 function addNewCityToLocalStorage(newCity) {
-    let Amarillo = document.getElementById("colorAmartillo");
+    let Amarillo = document.getElementById("colorAmarillo");
     let Rojo = document.getElementById("Emailerror");
     let Verde = document.getElementById("colorVerde");
     let cities = getCitiesFromLocalStorage();
