@@ -10,7 +10,7 @@ function getCitiesFromLocalStorage() {
     }
     return cities;
 }
-function vacio() {
+function NoCiudadCargada() {
     if(cities.length == 0){
         confirm("ERROR: No hay ciudades cargadas");
     }
@@ -27,7 +27,7 @@ function add(ciudad) {
     selectCity.appendChild(Nuevaopcion);
 }
 
-async function callAPI() {
+async function FuncionAPI() {
     let CiudadIngresada = document.getElementById("ciudades").value;
     let API =`https://api.openweathermap.org/data/2.5/weather?q=${CiudadIngresada}&appid=9a6a18f12cfd008ec940c515b6c1cde2&units=metric&lang=es`;
     try {
