@@ -29,9 +29,9 @@ function add(ciudad) {
 
 async function callAPI() {
     let CiudadIngresada = document.getElementById("ciudades").value;
-    let concxionApi =`https://api.openweathermap.org/data/2.5/weather?q=${CiudadIngresada}&appid=9a6a18f12cfd008ec940c515b6c1cde2&units=metric&lang=es`;
+    let API =`https://api.openweathermap.org/data/2.5/weather?q=${CiudadIngresada}&appid=9a6a18f12cfd008ec940c515b6c1cde2&units=metric&lang=es`;
     try {
-        result = await fetch(concxionApi);
+        result = await fetch(API);
         jsonObjet = await result.json();
     } 
     catch (error) {
@@ -44,6 +44,6 @@ async function callAPI() {
         document.getElementById("SensacionTermica").innerHTML =` Sensacion Termica: ${jsonObjet.main.feels_like}º`;
         document.getElementById("Humedad").innerHTML = `Humedad: ${jsonObjet.main.humidity}%`;
         document.getElementById("Velocidad").innerHTML = `Velocidad del Viento: ${(jsonObjet.wind.speed*3.6).toFixed(1)}Km/h`;
-        document.getElementById("Presion").innerHTML = `Presion: ${jsonObjet.main.prssure}P`;
+        document.getElementById("Presion").innerHTML = `Presion: ${jsonObjet.main.pressure} P`;
     }
 }
